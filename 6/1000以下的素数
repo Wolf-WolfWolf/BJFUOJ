@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	int x = 0;
+	int a = 1;
+	
+  //printf("请输入一个正整数 X (3 <= x <= 1000)");
+	scanf("%d", &x);
+	
+	int n = 2;
+	
+	while (a != 0){
+		a = x % n;
+		n++;
+	}
+	
+	if (x < (n+1)){
+		printf("YES");
+	}else{
+		printf("NO");
+	}
+	
+	return 0;
+ } 
+ 
